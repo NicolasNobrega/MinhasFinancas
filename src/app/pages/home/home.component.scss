@@ -1,0 +1,87 @@
+@import '../../../styles.scss';
+
+p {
+  font-size: 60px;
+  font-family: $fonte-titulo;
+  font-weight: bold;
+  padding: 200px 0;
+  text-align: justify;
+}
+h1{
+  font-size: 60px;
+  font-family: $fonte-titulo;
+  font-weight: bold;
+  text-align: center;
+}
+
+.background {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: justify;
+  width: 95%; /* Ocupa 95% da largura da tela */
+  height: 90%;
+  max-width: 95%; /* Largura máxima do container */
+  margin: 6rem auto; /* Espaçamento de 6rem na parte superior e inferior, e centralizado horizontalmente */
+  border: 2px solid black; /* Adicionando uma borda preta */
+
+  @media screen and (max-width: 768px) {
+    /* Reduzir a margem para dispositivos menores */
+    margin: 3rem auto;
+    /* Ajustar a largura do container para ocupar 90% da largura da tela em dispositivos menores */
+    width: 90%;
+  }
+
+  @media screen and (max-width: 480px) {
+    /* Reduzir ainda mais a margem para dispositivos muito pequenos */
+    margin: 2rem auto;
+    /* Ajustar a largura do container para ocupar 80% da largura da tela em dispositivos muito pequenos */
+    width: 80%;
+  }
+}
+
+.title {
+  color: #333;
+  font-size: 2rem;
+  margin-top: 0;
+}
+
+.line {
+  border: 1px solid black;
+}
+
+.button {
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  font-size: 30px;
+  font-family: $fonte-titulo;
+  font-weight: bold;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.text {
+  color: #333;
+  font-size: 1rem;
+}
